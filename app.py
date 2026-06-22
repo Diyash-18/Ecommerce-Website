@@ -29,7 +29,7 @@ client = razorpay.Client(auth=("rzp_test_Szpk2T74rYYRdZ", "fhYCmzMCLl7RChcWKIFfi
 #client = razorpay.Client(auth=("rzp_test_Szpk2T74rYYRdZ", "fhYCmzMCLl7RChcWKIFfizk5"))
 from werkzeug.utils import secure_filename #used to check secure filename or not
 import os
-mydb=connection.MySQLConnection(user='flaskuser',host='localhost',password='Diya@08',db='ecomdb')
+mydb=connection.MySQLConnection(user='flaskuser',host='localhost',password='password',db='ecomdb')
 app=Flask(__name__)
 app.wsgi_app=ProxyFix(app.wsgi_app,x_proto=1,x_host=1)
 app.permanent_session_lifetime=timedelta(days=1)
